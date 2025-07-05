@@ -11,7 +11,7 @@ import { Navbar } from './component/Navbar/Navbar.jsx';
 import { useSelector, useDispatch } from 'react-redux'; // Import Redux hooks
 import { logout } from './store/authSlice'; // Import the logout action
 import { Profile } from './views/profile.jsx';
-
+import { LogoutComponent } from './component/Logout/Logout';
 // A private route component to guard routes
 const PrivateRoute = ({ children }) => {
   // Use useSelector to get the isAuthenticated state and isLoading state from Redux
@@ -55,7 +55,8 @@ const MainApplicationLayout = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/login-or-signup" element={<CommonAuth />} />
         <Route path="/register" element={<CommonAuth />} />
-
+        {/* New Logout Route */}
+        <Route path="/logout" element={<LogoutComponent />} />
         {/* Private/Protected Routes - Only accessible if authenticated */}
         <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
         <Route path="/my-connect" element={<PrivateRoute><MyConnect /></PrivateRoute>} />
