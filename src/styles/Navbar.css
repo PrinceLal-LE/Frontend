@@ -1,0 +1,46 @@
+.navbarOptions {
+    /* max-width: 140 rem; */
+    padding: 2.2rem 4.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap:3.2rem;
+    align-items: center;
+
+}
+
+li {
+    list-style: none;
+}
+
+.logoNavbar img{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0px;
+}
+
+.custom-navbar {
+    margin-bottom: 10px; /* This creates the 10px gap */
+    background-color: white
+}
+
+.searchNavbar{
+    border-radius: 100px;
+}
+
+
+.nav-link.active {
+    color: rgb(0, 136, 255) !important;
+    font-weight: 900 !important; 
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700 !important; 
+  display: flex;
+  flex-wrap: wrap;
+}
