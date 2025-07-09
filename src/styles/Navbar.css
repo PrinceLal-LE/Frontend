@@ -44,3 +44,23 @@ li {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Target Bootstrap's dropdown menu class directly */
+.dropdown-menu.show {
+    position: absolute; /* Ensure it's positioned (Bootstrap usually handles this) */
+    z-index: 1050; /* A high z-index to place it above most other elements. */
+                     /* Bootstrap's default for modals is 1050, so matching or exceeding it is good. */
+}
+
+/* If there's a specific class for your "More" dropdown, apply z-index there too */
+#headerMoreButton .dropdown-menu.show {
+    z-index: 1051; /* Slightly higher for the "More" dropdown if needed */
+}
+
+/* You may also want to ensure your main navbar has a z-index if content is overlapping the navbar itself */
+.custom-navbar {
+    margin-bottom: 10px;
+    background-color: white;
+    position: relative; /* Ensure it creates a stacking context */
+    z-index: 1040; /* Give the entire navbar a z-index too, lower than dropdowns */
+}
