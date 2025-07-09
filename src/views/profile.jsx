@@ -1,5 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
-
+import React from "react";
+import { MyProfile } from "./Profile/MyProfile";
+import Advertisment from './Home/Components/Advertisment'
 export const Profile = () => {
     return (
         <>
@@ -9,14 +11,14 @@ export const Profile = () => {
                     {/* Main content area */}
                     <Col md={9}>
                         {/* Search Pane */}
-                            Prince
+                        <MyProfile/>
                         {/* Left content area */}
                     </Col>
 
                     {/* Right content area */}
                     <Col md={3}>
                         {/* Right content goes here */}
-                        RightContent
+                        <Advertisment/>
                     </Col>
                 </Row>
             </Container>

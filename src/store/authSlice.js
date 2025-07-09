@@ -57,9 +57,15 @@ const authSlice = createSlice({
         setLoading: (state, action) => {
             state.isLoading = action.payload;
         },
+        // To update user profile
+        updateUserProfile: (state, action) => {
+            state.user = { ...state.user, ...action.payload };
+            localStorage.setItem('user', JSON.stringify(state.user));
+            console.log('User profile updated in Redux and localStorage.');
+        },
     },
 });
 
-export const { loginSuccess, logout, setLoading } = authSlice.actions;
+export const { loginSuccess, logout, setLoading, updateUserProfile } = authSlice.actions;
 
 export default authSlice.reducer;   
