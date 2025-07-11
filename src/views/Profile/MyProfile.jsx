@@ -92,7 +92,7 @@ export const MyProfile = () => {
     }
 
     return (
-        <div className="d-flex justify-content-center py-0 mb-3" style={{ minHeight: '100vh', backgroundColor: '#f8f9fa', borderRadius: '15px' }}>
+        <div className="d-flex justify-content-center py-0 m-3" style={{ minHeight: '100vh', backgroundColor: '#f8f9fa', borderRadius: '15px' }}>
             <Container className="bg-white p-4 p-md-5 position-relative" style={{ maxWidth: '100%', borderRadius: '15px' }}>
                 {/* Cover Photo Section */}
                 <div className="position-relative w-100 bg-light rounded overflow-hidden border border-secondary d-flex align-items-center justify-content-center mb-4" style={{ height: '180px' }}>
