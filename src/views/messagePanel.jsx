@@ -181,8 +181,7 @@ export const MessagePanel = () => {
                             </Button>
                         </InputGroup>
                         {/* Filter Tabs */}
-                        <Tabs defaultActiveKey="focused" id="message-filters" className="mb-0 mt-3 message-filter-tabs">
-                            <Tab eventKey="focused" title="Focused"></Tab>
+                        <Tabs defaultActiveKey="jobs" id="message-filters" className="mb-0 mt-3 message-filter-tabs">
                             <Tab eventKey="jobs" title="Jobs"></Tab>
                             <Tab eventKey="unread" title="Unread"></Tab>
                             <Tab eventKey="my-connections" title="My Connections"></Tab>
